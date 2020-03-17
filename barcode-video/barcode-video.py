@@ -10,7 +10,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument('-o','--output',default='barcode.csv',type=str,help='output')
 args = vars(ap.parse_args())
 
-vs = VideoStream(src=0,usePiCamera=).start()
+vs = VideoStream(src=0).start()
 
 found = set()
 
